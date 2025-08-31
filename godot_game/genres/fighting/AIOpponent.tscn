@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bh8kx7y9m1g3r"]
+[gd_scene load_steps=5 format=3 uid="uid://bh8kx7y9m1g3r"]
 
 [ext_resource type="Script" path="res://genres/fighting/AIOpponent.gd" id="1_5cnij"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2eh4l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2eh4l"]
 size = Vector2(28, 44)
@@ -33,7 +35,7 @@ script = ExtResource("1_5cnij")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0.3, 0.3, 1)
 scale = Vector2(28, 44)
-texture = SubResource("PlaceholderTexture2D_placeholder")
+texture = SubResource("PlaceholderTexture2D_2eh4l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2eh4l")
