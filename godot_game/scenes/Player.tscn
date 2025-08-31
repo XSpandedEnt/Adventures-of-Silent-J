@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxg8a8y8m4g3p"]
+[gd_scene load_steps=9 format=3 uid="uid://dxg8a8y8m4g3p"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_4bmhj"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1dg3k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1dg3k"]
 size = Vector2(32, 48)
@@ -81,13 +83,13 @@ _data = {
 "side_idle": SubResource("Animation_side_idle")
 }
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player", "players"]]
 script = ExtResource("1_4bmhj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.3, 0.5, 1, 1)
 scale = Vector2(32, 48)
-texture = SubResource("PlaceholderTexture2D_placeholder")
+texture = SubResource("PlaceholderTexture2D_1dg3k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1dg3k")
